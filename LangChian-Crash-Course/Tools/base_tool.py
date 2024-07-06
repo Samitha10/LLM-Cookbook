@@ -71,8 +71,7 @@ tools = [
     MultiplyNumbersTool(),
 ]
 
-# Initialize a ChatOpenAI model
-llm = ChatOpenAI(model="gpt-4o")
+
 
 # Pull the prompt template from the hub
 prompt = hub.pull("hwchase17/openai-tools-agent")
