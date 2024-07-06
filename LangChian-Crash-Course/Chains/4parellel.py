@@ -25,8 +25,7 @@ def analyze_pros(features):
         [
             ("system", "You are an expert product reviewer."),
             (
-                "human",
-                "Given these features: {features}, list the pros of these features.",
+                "human", "Given these features: {features}, list the pros of these features.",
             ),
         ]
     )

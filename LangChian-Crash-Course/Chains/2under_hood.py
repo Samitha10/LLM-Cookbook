@@ -8,7 +8,7 @@ import os
 groq_key = os.environ.get("GROQ_KEY")
 
 # Create a ChatGroq model
-model = ChatGroq(model='mixtral-8x7b-32768', api_key=groq_key)
+model = ChatGroq(model='gemma2-9b-it', api_key=groq_key)
 
 # Define prompt templates
 prompt_template = ChatPromptTemplate.from_messages(
