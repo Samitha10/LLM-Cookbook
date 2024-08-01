@@ -3,3 +3,6 @@ langchain-core
 langchain
 langchain-groq
 langchainhub
+neo4j
+langchain_experimental
+wikipedia
