@@ -1,4 +1,6 @@
-import langchain, langchain_core, langchain_community
+import langchain
+import langchain_core
+import langchain_community
 from langchain_groq import ChatGroq
 import os
 
@@ -13,9 +15,9 @@ llm = ChatGroq(
 
 """
 
-NEO4J_URI = "neo4j+s://3387c913.databases.neo4j.io"
-NEO4J_USERNAME = "neo4j"
-NEO4J_PASSWORD = "FB6seWoKvZuxgjgndvt8dhRc8ieUeClefrCYhcKvjvw"
+NEO4J_URI = os.environ.get("NEO4J_URI")
+NEO4J_USERNAME = os.environ.get("NEO4J_USERNAME")
+NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD")
 
 from langchain_community.graphs import Neo4jGraph
 
